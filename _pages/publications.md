@@ -12,6 +12,7 @@ author_profile: true
 {% include base_path %}
 
 ## Journals
+---
 {% for post in site.publications reversed %}
   {% if post.type == 'journal' %}
     {% include archive-single.html %}
@@ -19,6 +20,7 @@ author_profile: true
 {% endfor %}
 
 ## International Conferences
+---
 {% for post in site.publications reversed %}
   {% if post.type == 'int-conference' %}
     {% include archive-single.html %}
@@ -26,6 +28,7 @@ author_profile: true
 {% endfor %}
 
 ## Domestic Conferences
+---
 {% for post in site.publications reversed %}
   {% if post.type == 'domestic-conference' %}
     {% include archive-single.html %}
