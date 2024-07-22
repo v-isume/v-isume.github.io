@@ -11,54 +11,63 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Engineering Science, Osaka University, March/2025 (Expected)
+* M.Sc. in Engineering Science, Osaka University, October/2021
+* B.Sc. in Chemical Engineering, University of Sao Paulo (USP), December/2018
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* From September, 2022 until now: Research Assistant (Contract)
+  * Osaka University
+  * Duties includes: Assisting the professor's research by executing varied tasks, such as conducting experiments, 3D modeling/printing and summarizing state-of-the-art methods.
+  * Supervisor: Professor Kensuke Harada
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* January, 2018 to July, 2019: General Manager (Contract)
+  * Personal Vestibulares
+  * Duties included: Managing tutors for class material development and schedules. Tutor for high-school level lessons in Mathematics, Physics and Chemistry. Development of class materials for those subjects. Involved in performance analytics of the company.
+  * Supervisor: Gustavo Yolle
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+*  February, 2017 to April, 2017: IT (Internship)
+  * Hexagon AB
+  * Duties included: Support to technical areas in a consulting project in Process and Instrumentation using the company's proprietary software, SmartPlant. Update/re-create industrial flowcharts to the newest available version at the time.
+  * Supervisor: Ricardo Luna Mourilla
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Machine Learning
+  * PyTorch
+  * Tensorflow
+  * Detectron2
+* Computer Vision
+  * OpenCV
+  * Intel RealSense
+* Robotics
+  * ROS
+  * MoveIt!
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  ## Journals
+---
+{% for post in site.publications reversed %}
+  {% if post.type == 'journal' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+## International Conferences
+---
+{% for post in site.publications reversed %}
+  {% if post.type == 'int-conference' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+## Domestic Conferences
+---
+{% for post in site.publications reversed %}
+  {% if post.type == 'domestic-conference' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
