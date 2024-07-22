@@ -32,6 +32,13 @@
     {% else %}
       <b>{{ title }}</b> - <i>{{ post.authors }}</i>. In <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
     {% endif %}
+    {% if post.paperurl and post.arxivurl %}
+      <br><a href=" {{ post.paperurl }} ">Paper link</a> | <a href="{{ post.arxivurl }}">arXiV link</a>
+    {% elsif post.paperurl %}
+      <br><a href=" {{ post.paperurl }} ">Paper link</a>
+    {% elsif post.arxivurl %}
+      <br><a href="{{ post.arxivurl }}">arXiV link</a>
+    {% endif %}
     </li>
  </article>
 </div>
