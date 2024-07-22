@@ -47,11 +47,12 @@ Skills
 
 Publications
 ======
-  ## Journals
+  
+## Journals
 ---
 {% for post in site.publications reversed %}
   {% if post.type == 'journal' %}
-    {% include archive-single.html %}
+    {% include publications-cv.html %}
   {% endif %}
 {% endfor %}
 
@@ -59,7 +60,7 @@ Publications
 ---
 {% for post in site.publications reversed %}
   {% if post.type == 'int-conference' %}
-    {% include archive-single.html %}
+    {% include publications-cv.html %}
   {% endif %}
 {% endfor %}
 
@@ -67,7 +68,7 @@ Publications
 ---
 {% for post in site.publications reversed %}
   {% if post.type == 'domestic-conference' %}
-    {% include archive-single.html %}
+    {% include publications-cv.html %}
   {% endif %}
 {% endfor %}
   
