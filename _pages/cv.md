@@ -27,7 +27,7 @@ Work experience
   * Duties included: Managing tutors for class material development and schedules. Tutor for high-school level lessons in Mathematics, Physics and Chemistry. Development of class materials for those subjects. Involved in performance analytics of the company.
   * Supervisor: Gustavo Yolle
 
-*  February, 2017 to April, 2017: IT (Internship)
+* February, 2017 to April, 2017: IT (Internship)
   * Hexagon AB
   * Duties included: Support to technical areas in a consulting project in Process and Instrumentation using the company's proprietary software, SmartPlant. Update/re-create industrial flowcharts to the newest available version at the time.
   * Supervisor: Ricardo Luna Mourilla
