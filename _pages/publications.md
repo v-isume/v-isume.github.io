@@ -13,21 +13,21 @@ author_profile: true
 
 ## Journals
 {% for post in site.publications reversed %}
-  {% if post.type = 'journal' %}
+  {% if post.type == 'journal' %}
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
 
 ## International Conferences
 {% for post in site.publications reversed %}
-  {% if post.type = 'int-conference' %}
+  {% if post.type == 'int-conference' %}
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
 
 ## Domestic Conferences
 {% for post in site.publications reversed %}
-  {% if post.type = 'domestic-conference' %}
+  {% if post.type == 'domestic-conference' %}
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
