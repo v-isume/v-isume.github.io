@@ -27,7 +27,11 @@
     {% endif %}
 
     {% if post.collection == 'publications' %} 
+      {% if post.excerpt and site.read_more != 'enabled' %}
         <p><b>{{ title }}</b> - <i>{{ post.authors }}</i><br>In <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p><br class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}
+      {% else %}
+        <p><b>{{ title }}</b> - <i>{{ post.authors }}</i><br>In <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+      {% endif %}
     {% else %}
       <h2 class="archive__item-title" itemprop="headline">
         {% if post.link %}
