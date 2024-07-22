@@ -27,13 +27,11 @@
       </div>
     {% endif %}
       
-    <h3 class="archive__item-title" itemprop="headline">
-      {% if post.excerpt %}
-        <b>{{ title }}</b> - <i>{{ post.authors }}</i>. In <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}. {{ post.excerpt }}
-      {% else %}
-        <b>{{ title }}</b> - <i>{{ post.authors }}</i>. In <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
-      {% endif %}
-    </h3>
+    {% if post.excerpt %}
+      <b>{{ title }}</b> - <i>{{ post.authors }}</i>. In <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}. {{ post.excerpt }}
+    {% else %}
+      <b>{{ title }}</b> - <i>{{ post.authors }}</i>. In <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
+    {% endif %}
     </li>
  </article>
 </div>
