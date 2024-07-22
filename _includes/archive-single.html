@@ -29,7 +29,6 @@
     {% if post.collection == 'publications' %} 
         <p><b>{{ title }}</b> - <i>{{ post.authors }}</i><br>In <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% else %}
-
       <h2 class="archive__item-title" itemprop="headline">
         {% if post.link %}
           <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
